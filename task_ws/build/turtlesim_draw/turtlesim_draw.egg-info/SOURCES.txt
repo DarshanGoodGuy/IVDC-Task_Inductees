@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/turtlesim_draw/turtlesim_draw.egg-info/PKG-INFO
+../../build/turtlesim_draw/turtlesim_draw.egg-info/SOURCES.txt
+../../build/turtlesim_draw/turtlesim_draw.egg-info/dependency_links.txt
+../../build/turtlesim_draw/turtlesim_draw.egg-info/entry_points.txt
+../../build/turtlesim_draw/turtlesim_draw.egg-info/requires.txt
+../../build/turtlesim_draw/turtlesim_draw.egg-info/top_level.txt
+../../build/turtlesim_draw/turtlesim_draw.egg-info/zip-safe
+resource/turtlesim_draw
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+turtlesim_draw/__init__.py
+turtlesim_draw/code.py

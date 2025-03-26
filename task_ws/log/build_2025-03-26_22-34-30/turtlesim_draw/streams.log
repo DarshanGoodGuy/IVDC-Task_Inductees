@@ -1,0 +1,21 @@
+[0.630s] Invoking command in '/home/darshan/Task-Inductees/task_ws/src/turtlesim_draw': PYTHONPATH=/home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darshan/Task-Inductees/task_ws/install/turtlesim_draw/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_draw build --build-base /home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/build install --record /home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/install.log --single-version-externally-managed install_data
+[0.748s] running egg_info
+[0.748s] writing ../../build/turtlesim_draw/turtlesim_draw.egg-info/PKG-INFO
+[0.748s] writing dependency_links to ../../build/turtlesim_draw/turtlesim_draw.egg-info/dependency_links.txt
+[0.749s] writing entry points to ../../build/turtlesim_draw/turtlesim_draw.egg-info/entry_points.txt
+[0.749s] writing requirements to ../../build/turtlesim_draw/turtlesim_draw.egg-info/requires.txt
+[0.749s] writing top-level names to ../../build/turtlesim_draw/turtlesim_draw.egg-info/top_level.txt
+[0.750s] reading manifest file '../../build/turtlesim_draw/turtlesim_draw.egg-info/SOURCES.txt'
+[0.757s] writing manifest file '../../build/turtlesim_draw/turtlesim_draw.egg-info/SOURCES.txt'
+[0.758s] running build
+[0.758s] running build_py
+[0.758s] running install
+[0.758s] running install_lib
+[0.760s] running install_data
+[0.760s] running install_egg_info
+[0.761s] removing '/home/darshan/Task-Inductees/task_ws/install/turtlesim_draw/lib/python3.10/site-packages/turtlesim_draw-0.0.0-py3.10.egg-info' (and everything under it)
+[0.761s] Copying ../../build/turtlesim_draw/turtlesim_draw.egg-info to /home/darshan/Task-Inductees/task_ws/install/turtlesim_draw/lib/python3.10/site-packages/turtlesim_draw-0.0.0-py3.10.egg-info
+[0.775s] running install_scripts
+[0.786s] Installing turtlesim_draw script to /home/darshan/Task-Inductees/task_ws/install/turtlesim_draw/lib/turtlesim_draw
+[0.788s] writing list of installed files to '/home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/install.log'
+[0.802s] Invoked command in '/home/darshan/Task-Inductees/task_ws/src/turtlesim_draw' returned '0': PYTHONPATH=/home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darshan/Task-Inductees/task_ws/install/turtlesim_draw/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_draw build --build-base /home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/build install --record /home/darshan/Task-Inductees/task_ws/build/turtlesim_draw/install.log --single-version-externally-managed install_data

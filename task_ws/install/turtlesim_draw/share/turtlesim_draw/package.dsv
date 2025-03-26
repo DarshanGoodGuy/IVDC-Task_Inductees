@@ -1,0 +1,6 @@
+source;share/turtlesim_draw/hook/pythonpath.ps1
+source;share/turtlesim_draw/hook/pythonpath.dsv
+source;share/turtlesim_draw/hook/pythonpath.sh
+source;share/turtlesim_draw/hook/ament_prefix_path.ps1
+source;share/turtlesim_draw/hook/ament_prefix_path.dsv
+source;share/turtlesim_draw/hook/ament_prefix_path.sh
