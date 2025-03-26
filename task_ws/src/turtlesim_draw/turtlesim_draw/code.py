@@ -15,7 +15,7 @@ class TurtleDraw(Node):
         self.kill_client = self.create_client(Kill, 'kill')
         self.current_x = 0.0
         self.current_y = 0.0
-        self.current_theta = 0.0
+        self.current_theta = 0.0  # radians, facing right
         self.pen_is_down = True
         self.pose_received = False
     
@@ -45,30 +45,37 @@ class TurtleDraw(Node):
         dy = end_y - self.current_y
         distance = math.sqrt(dx**2 + dy**2)
         target_angle = math.atan2(dy, dx)
-        
+
+        #calculate required rotation
         angle_diff = target_angle - self.current_theta
         angle_diff = (angle_diff + math.pi) % (2 * math.pi) - math.pi
 
+        #rotate to face target
         if abs(angle_diff) > 1e-3:
             self._rotate(angle_diff, target_angle, speed)
+
+        #Move forward
         self._move_straight(distance, speed)
 
     def draw_circle(self, center_x, center_y, radius, speed=1.0):
         """Draw circle around specified center coordinates with given radius"""
+        was_pen_down = self.pen_is_down
+        
         while not self.pose_received:
             rclpy.spin_once(self)
 
-        # Move to the correct starting position (rightmost point of the circle)
+        # Move to the correct starting position 
+        
         start_x = center_x + radius
         start_y = center_y
         self.pen_up()
         self.draw_line(start_x, start_y)  # Move to the start point
         self.pen_down()
 
-        # Rotate the turtle to face tangent to the circle
+        # Rotate the turtle to face the center
         self._rotate(math.pi / 2, self.current_theta + math.pi / 2, speed)
 
-        # Start circular motion
+        # Execute movement
         msg = Twist()
         msg.linear.x = speed  # Forward speed
         msg.angular.z = speed / radius  # Angular velocity
@@ -87,6 +94,7 @@ class TurtleDraw(Node):
         self.publisher_.publish(msg)
     
     def _rotate(self,angle_diff, target_angle, speed):
+        
         while not self.pose_received:
             rclpy.spin_once(self)
         
